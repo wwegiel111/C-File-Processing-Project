@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int cpy_file(char *src_path, char *dest_path){
+int rev_cpy_file(char *src_path, char *dest_path){
   FILE *src = fopen(src_path, "r");
   if (src == NULL){
     printf("Error opening file\n");
@@ -31,11 +31,11 @@ int cpy_file(char *src_path, char *dest_path){
 int main(void){
   char path[] = "test.txt";
   char dest_path[] = "test2.txt";
-  if (cpy_file(path, dest_path) == -1){
+  if (rev_cpy_file(path, dest_path) == -1){
     printf("Error copying file\n");
   } else{
     printf("File copied\n");
-    int byte_cpy = cpy_file(path, dest_path);
+    int byte_cpy = rev_cpy_file(path, dest_path);
     printf("File copied: bytes copied: %d\n", byte_cpy);
   }
 
