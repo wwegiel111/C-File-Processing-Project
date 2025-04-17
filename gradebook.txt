@@ -1,0 +1,5 @@
+Smith 5 2 4 5
+Johnson 5 5 3 2
+Williams 5 2 2 4
+Brown 5 3 3 3
+Jones 2 3 5 2
